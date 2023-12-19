@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Varela+Round&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!-- header -->
+        <div class="header">
+            <!-- header content -->
+            <div class="header-content">
+                <div class="paragraph">
+                <p class="quran">( بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ )</p> 
+                <p class="quran">(( إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا ))</p>
+                <p class="prayer-times">- مواقيت الصلاة في المناطق السعوديه -</p>
+                
+                </div>
+
+                <div class="list flex">
+                    <div class="select-list">
+                        <span>أختر المنطقه من هنا >></span>
+                        <select id="cities-select">
+                      
+                        </select>
+                        
+                    </div>
+                </div>
+                <h1 class="city-name">الرياض</h1>
+                <h6 class="date" id="date">الجمعه 24 نوفمبر</h6>
+
+            </div>
+            <!-- //header content-->
+            <hr>
+        </div>
+        <!-- //header -->
+
+        <!-- main content -->
+        <div class="main-content">
+            <div class="cards">
+              
+                <div class="card">
+                    <h3 class="prayer-name flex">الفجر</h3>
+                    <div class="card-body flex">
+                    <h5 class="prayer-time" id="fajr-time">04:11</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="prayer-name flex">الشروق</h3>
+                    <div class="card-body flex">
+                    <h5 class="prayer-time" id="sunrise-time">04:11</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="prayer-name flex">الظهر</h3>
+                    <div class="card-body flex">
+                    <h5 class="prayer-time" id="duhr-time">04:11</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="prayer-name flex">العصر</h3>
+                    <div class="card-body flex">
+                    <h5 class="prayer-time" id="asr-time">04:11</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="prayer-name flex">المغرب</h3>
+                    <div class="card-body flex">
+                    <h5 class="prayer-time" id="maghrb-time">04:11</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="prayer-name flex">العشاء</h3>
+                    <div class="card-body flex">
+                    <h5 class="prayer-time" id="isha-time">04:11</h5>
+                    </div>
+                </div>
+              
+
+            </div>
+
+        </div>
+        <!-- //main content -->
+
+        <span class="malk">Developer: Malk Aboud</span>
+
+    </div>
+
+<script src="/node_modules/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

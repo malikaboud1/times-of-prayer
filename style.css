@@ -1,0 +1,361 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    body{
+      
+    font-family: 'Tajawal', sans-serif;
+    background-color: #200848;
+
+    direction: rtl;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+
+.header{
+    margin: 50px 50px 10px 50px;
+}
+.header .header-content .paragraph{
+    width: 350px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+
+    font-size: 20px;
+}
+.header .header-content .paragraph .quran{
+    font-family: sans-serif;
+    word-spacing: 2px;
+}
+.header .header-content .paragraph .prayer-times{
+    margin-top: 40px;
+}
+
+.header .header-content .city-name{
+    font-weight: 400;
+    font-size: 100px;
+    color:white
+}
+.header .header-content .date{
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+}
+hr{
+    border-color: #3f1b7a;
+}
+
+.main-content{
+    height: 200px;
+    margin: 30px 50px 10px 50px;
+    color: white;
+
+}
+.main-content .cards{
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main-content .cards .card{
+    background-color:white;
+    flex-basis: 12%;
+    height: 20%;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 30%);
+    border-radius: 5px; 
+
+}
+.flex{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.main-content .cards .card .prayer-name{
+    background-color:#3f1b7a;
+
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+.main-content .cards .card .card-body{
+    height: 70px;
+}
+.main-content .cards .card .prayer-time{
+    color:black ;
+    font-size: 30px;
+}
+
+.list{
+    height: 50px;
+    align-items: flex-start;
+
+}
+.list .select-list{
+    width: 400px;
+}
+
+.list .select-list span{
+    display: inline-block;
+    width: 180px;
+    color: white;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 300;
+} 
+
+.list .select-list select{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    background: none;
+    font-family: 'Tajawal', sans-serif;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.list .select-list select option{
+    color: black;
+}
+.malk{
+    display: block;
+    color: white;
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width:400px){
+    .header{
+        margin: 30px 5px 10px 5px;
+    }
+    .header .header-content .paragraph p{
+
+        width: 350px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .list{
+        width: 390px;
+    }
+    .list .select-list{
+        width: 380px;
+        margin: 0 auto;
+
+    }
+    .list .select-list span{
+        width: 40%;
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 0;
+
+    }
+    .list .select-list select{
+        width: 40%;
+        font-size: 17px;
+        margin-right: 20px;
+    }
+    .header .header-content .city-name{
+        font-weight: 300;
+        font-size: 40px;
+        margin-right: 10px;
+
+    }
+    .header .header-content .date{
+        font-size: 25px;
+        font-weight: 100;
+        margin-right: 10px;
+    }
+
+    .main-content{
+        width: 100%;
+        height: 750px;
+        margin: 20px auto 5px;
+    
+    }
+    .main-content .cards{
+        height: 700px;
+        display: flex;
+    
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .main-content .cards .card{
+        flex-basis: 70%;
+        height: 100px;
+      
+    }
+
+}
+@media screen and (min-width:401px) and (max-width:575px){
+    .header{
+        margin: 30px auto 10px;
+    }
+   
+    .header .header-content .paragraph{
+        text-align: center;
+}
+.header .header-content .paragraph p{
+    font-weight: 300;
+}
+.header .header-content .paragraph .prayer-times{
+    font-size: 18px;
+}
+.list{
+    height: 50px;
+    align-items: flex-start;
+
+}
+.list .select-list{
+    width: 500px;
+}
+.list .select-list span{
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 20px;
+    width: 40%;
+
+}
+.list .select-list select{
+    width: 40%;
+    font-size: 17px;
+    margin-right: 10px;
+}
+.header .header-content .city-name{
+    font-weight: 400;
+    font-size: 30px;
+    margin-right: 15px;
+
+}
+.header .header-content .date{
+    font-size: 25px;
+    font-weight: 300;
+    margin-right: 15px;
+
+}
+.main-content{
+    width: 100%;
+    height: 400px;
+    margin: 20px auto 20px;
+
+}
+.main-content .cards{
+    height: 400px;
+
+    justify-content: space-between;
+    gap: 25px;
+    margin: 0 15px;
+}
+.main-content .cards .card{
+    flex-basis: 45%;
+    height: 90px;
+   
+
+}
+
+}
+@media screen and (min-width:576px) and (max-width:700px){
+   .list{
+    align-items: center;
+   }
+   .main-content{
+    height: 330px;
+   }
+    .main-content .cards{
+        height: 330px;
+    
+        justify-content: space-evenly;
+        gap: 25px;
+        margin: 0 40px;
+    }
+    .main-content .cards .card{
+        flex-basis: 30%;
+        height: 90px;
+      
+}
+}
+
+@media screen and (min-width:701px) and (max-width:980px){
+    .header .header-content .city-name{
+        font-weight: 500;
+        font-size: 35px;
+    
+    }
+    .header .header-content .date{
+        font-size: 30px;
+        font-weight: 400;
+    
+    }
+    .main-content{
+        width: 100%;
+        height: 330px;
+        margin: 20px auto 20px;
+
+    }
+    .main-content .cards{
+        height: 330px;
+    
+        justify-content: space-evenly;
+        gap: 25px;
+        margin: 0 40px;
+    }
+    .main-content .cards .card{
+        flex-basis: 30%;
+        height: 90px;
+      
+    }
+    .malk{
+        margin-left: 10px;
+    }
+
+}
+@media screen and (min-width:981px) and (max-width:5000px){
+    .main-content{
+        width: 100%;
+        height: 160px;
+        margin: 20px auto 20px;
+    
+    }
+    .main-content .cards{
+        height: 150px;
+    
+        justify-content: space-evenly;
+        gap: 25px;
+        margin: 0 40px;
+    }
+    .main-content .cards .card{
+        flex-basis: 12%;
+        height: 100px;
+      
+    }
+    .malk{
+        margin-left: 20px;
+    }
+
+}
